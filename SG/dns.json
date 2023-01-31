@@ -1,0 +1,12 @@
+{
+  "servers": [
+    "localhost",
+    "8.8.8.8",
+    {
+      "address": "dns.haofast.xyz",
+      "port": 53,
+      "domains": ["geosite:disney"]
+    }
+  ],
+  "tag": "dns_inbound"
+}
