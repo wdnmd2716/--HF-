@@ -1,0 +1,40 @@
+[
+    {
+        "tag": "IPv4_out",
+        "protocol": "freedom"
+    },
+    {
+      "tag": "netflix_proxy",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "mymy.heidaren.live",
+            "method": "aes-128-gcm",
+            "ota": false,
+            "password": "SDFsd2716",
+            "port": 19999,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+        "tag": "IPv6_out",
+        "protocol": "freedom",
+        "settings": {
+            "domainStrategy": "UseIPv6"
+        }
+    },
+    {
+        "protocol": "blackhole",
+        "tag": "block"
+    }
+]
